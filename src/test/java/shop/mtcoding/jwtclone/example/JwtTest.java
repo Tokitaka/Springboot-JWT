@@ -37,6 +37,7 @@ public class JwtTest {
         // 1. create mock jwt token -> Decode
         try {
             DecodedJWT decodedJWT = JWT.require(Algorithm.HMAC512("secretKey")).build().verify(jwt);
+            System.out.println(decodedJWT);
             // 2. Id verification
             int id = decodedJWT.getClaim("id").asInt();
             System.out.println(id);
