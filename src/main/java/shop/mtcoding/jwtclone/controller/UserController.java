@@ -18,6 +18,7 @@ import shop.mtcoding.jwtclone.model.UserRepository;
 public class UserController {
     private final UserRepository userRepository;
 
+    // authorization check needed
     @GetMapping("/user")
     public ResponseEntity<?> user() {
 
