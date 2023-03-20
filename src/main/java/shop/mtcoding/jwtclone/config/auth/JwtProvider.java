@@ -16,7 +16,7 @@ public class JwtProvider {
     private static final int EXP = 1000 * 60 * 60; // 1hr
     private static final String SECRET = "secretKey";
     // TOKEN_PREFIX, HEADER(Token keyname)
-    private static final String TOKEN_PREFIX = "Bearer ";
+    public static final String TOKEN_PREFIX = "Bearer ";
     public static final String HEADER = "Authorization";
 
     // user : id, role (claim)
